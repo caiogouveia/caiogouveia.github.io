@@ -25,7 +25,7 @@ export const curriculo = [
   {
     titulo: "Quattromani Propaganda",
     descricao:
-      "Desenvolvedor Web, utilizando PHP/CakePHP, Laravel, Html, MySQL, Css/Sass, Javascript, React.js. E também trabalhando com análises de estatísticas para ajudar o pessoal de planejamento com estratégias para clientes.",
+      "Desenvolvedor Web, utilizando PHP/CakePHP, Laravel, Html, MySQL, Css/Sass, Javascript, React.js.<br/> E também trabalhando com análises de estatísticas para ajudar o pessoal de planejamento com estratégias para clientes.",
   },
   {
     titulo: "TPF - Transportadora Porto Ferreira",
