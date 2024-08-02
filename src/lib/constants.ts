@@ -17,11 +17,11 @@ export const curriculo = [
     descricao:
       "Desenvolvedor Web, utilizando PHP, MySQL, Microsoft Sql Server <br>Desenvolvimento de peças para Marketing interno e externo. (Catálogos, Revistas, Panfletos, E-mail Marketing)",
   },
-  // {
-  //   titulo: "Amanda Duz (Key Design)",
-  //   descricao:
-  //     "Desenvolvedor Web, utilizando PHP/CakePHP, Ruby on Rails, MySQL, PostgreSQL, AWS Deploy das aplicações foram feitas usando OpsWorks na AWS de forma escalonável.",
-  // },
+  {
+    titulo: "Dev Freelancer",
+    descricao:
+      "Desenvolvedor Web, utilizando PHP/CakePHP, Ruby on Rails, MySQL, PostgreSQL, AWS Deploy das aplicações foram feitas usando OpsWorks na AWS de forma escalonável."
+  },
   {
     titulo: "Quattromani Propaganda",
     descricao:
