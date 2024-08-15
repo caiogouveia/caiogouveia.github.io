@@ -3,10 +3,23 @@ export const SITE_DESCRIPTION = "";
 export const HOME_OG_IMAGE_URL =
   "https://og-image.vercel.app/Next.js%20Blog%20Starter%20Example.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg";
 
-export const curriculo = [
+  export interface ICurriculoItem {
+    titulo: string;
+    descricao: string;
+    periodo?: {
+      inicio: Date;
+      fim: Date;
+    };
+  }
+
+export const curriculo: ICurriculoItem[] = [
   {
     titulo: "Meio do Meio Propaganda",
     descricao: "Desenvolvedor Web, utilizando Flash, PHP, MySQL.",
+    periodo:{
+      inicio: new Date("2007-01-01"),
+      fim: new Date("2007-07-01")
+    }
   },
   {
     titulo: "FW2 Propaganda",
