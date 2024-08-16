@@ -48,6 +48,6 @@ export const curriculo: ICurriculoItem[] = [
   {
     titulo: "Conhecimentos",
     descricao:
-      "Linux, Git, Teste unitários, Laravel, React, Flutter (desenvolvimento móvel), Figma (design e prototipação), Photoshop, Illustrator, InDesign.",
+      "Linux, Git, Teste unitários, Laravel, React, React Native, Flutter (desenvolvimento móvel), Figma (design e prototipação), Photoshop, Illustrator, InDesign.",
   },
 ];
