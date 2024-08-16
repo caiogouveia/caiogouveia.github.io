@@ -43,7 +43,7 @@ export const curriculo: ICurriculoItem[] = [
   {
     titulo: "TPF - Transportadora Porto Ferreira",
     descricao:
-      "Desenvolvedor Web frontend e backend, utilizando PHP/Laravel, Html, PostgreSQL , Css, Tailwind, Javascript, React.js, Next.js.",
+      "Desenvolvedor Web frontend e backend, utilizando PHP/Laravel, Html, PostgreSQL , Css, Tailwind, Javascript, React.js, Next.js, React Native",
   },
   {
     titulo: "Conhecimentos",
