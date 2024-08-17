@@ -1,5 +1,4 @@
 export function Intro() {
-  const gravatarHash = "13c6a35422eda84068043491eebd0c67";
   return (
     <>
       <section className="flex-col md:flex-column flexmd:justify-between mt-16">
@@ -13,11 +12,7 @@ export function Intro() {
             alignItems: "center",
           }}
         >
-          <div
-            style={{ marginRight: 10, borderRadius: 50, overflow: "hidden" }}
-          >
-            <img src={`https://gravatar.com/avatar/${gravatarHash}`} />
-          </div>
+          <Gravatar />
           <h1 className="text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
             Caio Gouveia
           </h1>
@@ -42,3 +37,19 @@ export function Intro() {
     </>
   );
 }
+
+const Gravatar = () => {
+  const gravatarHash = "13c6a35422eda84068043491eebd0c67";
+  const styles = {
+    image: {
+      height: "100%",
+      width: "auto",
+    },
+  };
+  
+  return (
+    <div className={"border-gradient-purple"}>
+      <img style={styles.image} src={`https://gravatar.com/avatar/${gravatarHash}`} />
+    </div>
+  );
+};
