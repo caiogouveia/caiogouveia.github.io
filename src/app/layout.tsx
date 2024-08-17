@@ -54,9 +54,58 @@ export default function RootLayout({
         <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
-      <body className={inter.className}>
-        <div className="min-h-screen">{children}</div>
+      <body
+        className={inter.className}
+        style={{
+          backgroundColor: "#ffffff",
+          width: "100%",
+          height: "100%",
+          overflowY: "scroll",
+          display: "flex",
+          alignItems: "center",
+          alignContent: "center",
+          justifyContent: "center",
+          position: "relative"
+        }}
+      >
+        {/* <Dock /> */}
+        {/* <Line position={70}/> */}
+        {/* <Line position={90}/> */}
+        <div style={{ maxWidth: 1024, zIndex: 2}} className="min-h-screen">
+          {children}
+        </div>
       </body>
     </html>
+  );
+}
+
+const Line = ({ position }: { position: number }) => {
+  return (
+    <div
+      style={{
+        borderLeftWidth: 1,
+        borderColor: "red",
+        position: "absolute",
+        height: "100%",
+        top: 0,
+        left: `${position}%`,
+        zIndex: 1
+      }}
+    />
+  );
+};
+
+const Dock = () => {
+  return (
+    <div
+      style={{
+        height: "100%",
+        minWidth: "120px",
+        backgroundColor: "#484848",
+        position: "absolute",
+        top: 0,
+        left: 0,
+      }}
+    ></div>
   );
 }
