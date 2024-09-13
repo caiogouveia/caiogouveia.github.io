@@ -7,8 +7,8 @@ export const HOME_OG_IMAGE_URL =
     titulo: string;
     descricao: string;
     periodo?: {
-      inicio: Date;
-      fim: Date;
+      inicio: string;
+      fim: string;
     };
   }
 
@@ -16,34 +16,54 @@ export const curriculo: ICurriculoItem[] = [
   {
     titulo: "Meio do Meio Propaganda",
     descricao: "Desenvolvedor Web, utilizando Flash, PHP, MySQL.",
-    periodo:{
-      inicio: new Date("2007-01-01"),
-      fim: new Date("2007-07-01")
-    }
+    periodo: {
+      inicio: "Fev. 2003",
+      fim: "Set. 2006",
+    },
   },
   {
     titulo: "FW2 Propaganda",
     descricao: "Desenvolvedor Web, utilizando Flash, PHP, MySQL.",
+    periodo: {
+      inicio: "Fev. 2006",
+      fim: "Set. 2006",
+    },
   },
   {
     titulo: "Inter Color Distribuidora",
     descricao:
       "Desenvolvedor Web, utilizando PHP, MySQL, Microsoft Sql Server <br>Desenvolvimento de peças para Marketing interno e externo. (Catálogos, Revistas, Panfletos, E-mail Marketing)",
+    periodo: {
+      inicio: "Mai. 2007",
+      fim: "Fev. 2012",
+    },
   },
   {
     titulo: "Dev Freelancer",
     descricao:
-      "Desenvolvedor Web, utilizando PHP/CakePHP, Ruby on Rails, MySQL, PostgreSQL, AWS Deploy das aplicações foram feitas usando OpsWorks na AWS de forma escalonável."
+      "Desenvolvedor Web, utilizando PHP/CakePHP, Ruby on Rails, MySQL, PostgreSQL, AWS Deploy das aplicações foram feitas usando OpsWorks na AWS de forma escalonável.",
+      periodo:{
+        inicio: "Mar. 2012",
+        fim: "Jan. 2016"
+      }
   },
   {
     titulo: "Quattromani Propaganda",
     descricao:
       "Desenvolvedor Web, utilizando PHP/CakePHP, Laravel, Html, MySQL, Css/Sass, Javascript, React.js.<br/> E também trabalhando com análises de estatísticas para ajudar o pessoal de planejamento com estratégias para clientes.",
+      periodo:{
+        inicio: "Fev. 2016",
+        fim: "2020"
+      }
   },
   {
     titulo: "TPF - Transportadora Porto Ferreira",
     descricao:
       "Desenvolvedor Web frontend e backend, utilizando PHP/Laravel, Html, PostgreSQL , Css, Tailwind, Javascript, React.js, Next.js, React Native",
+      periodo:{
+        inicio: "Dez. 2022",
+        fim: "Até o momento"
+      }
   },
   {
     titulo: "Conhecimentos",
