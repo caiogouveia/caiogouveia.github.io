@@ -3,14 +3,14 @@ export const SITE_DESCRIPTION = "";
 export const HOME_OG_IMAGE_URL =
   "https://og-image.vercel.app/Next.js%20Blog%20Starter%20Example.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg";
 
-  export interface ICurriculoItem {
-    titulo: string;
-    descricao: string;
-    periodo?: {
-      inicio: string;
-      fim: string;
-    };
-  }
+export interface ICurriculoItem {
+  titulo: string;
+  descricao: string;
+  periodo?: {
+    inicio: string;
+    fim: string;
+  };
+}
 
 export const curriculo: ICurriculoItem[] = [
   {
@@ -32,7 +32,7 @@ export const curriculo: ICurriculoItem[] = [
   {
     titulo: "Inter Color Distribuidora",
     descricao:
-      "Desenvolvedor Web, utilizando PHP, MySQL, Microsoft Sql Server <br>Desenvolvimento de peças para Marketing interno e externo. (Catálogos, Revistas, Panfletos, E-mail Marketing)",
+    "Desenvolvedor Web, utilizando PHP, MySQL, Microsoft Sql Server <br>Desenvolvimento de peças para Marketing interno e externo. (Catálogos, Revistas, Panfletos, E-mail Marketing)",
     periodo: {
       inicio: "Mai. 2007",
       fim: "Fev. 2012",
@@ -41,33 +41,33 @@ export const curriculo: ICurriculoItem[] = [
   {
     titulo: "Dev Freelancer",
     descricao:
-      "Desenvolvedor Web, utilizando PHP/CakePHP, Ruby on Rails, MySQL, PostgreSQL, AWS Deploy das aplicações foram feitas usando OpsWorks na AWS de forma escalonável.",
-      periodo:{
-        inicio: "Mar. 2012",
-        fim: "Jan. 2016"
-      }
+    "Desenvolvedor Web, utilizando PHP/CakePHP, Ruby on Rails, MySQL, PostgreSQL, AWS Deploy das aplicações foram feitas usando OpsWorks na AWS de forma escalonável.",
+    periodo:{
+      inicio: "Mar. 2012",
+      fim: "Jan. 2016"
+    }
   },
   {
     titulo: "Quattromani Propaganda",
     descricao:
-      "Desenvolvedor Web, utilizando PHP/CakePHP, Laravel, Html, MySQL, Css/Sass, Javascript, React.js.<br/> E também trabalhando com análises de estatísticas para ajudar o pessoal de planejamento com estratégias para clientes.",
-      periodo:{
-        inicio: "Fev. 2016",
-        fim: "2020"
-      }
+    "Desenvolvedor Web, utilizando PHP/CakePHP, Laravel, Html, MySQL, Css/Sass, Javascript, React.js.<br/> E também trabalhando com análises de estatísticas para ajudar o pessoal de planejamento com estratégias para clientes.",
+    periodo:{
+      inicio: "Fev. 2016",
+      fim: "2020"
+    }
   },
   {
     titulo: "TPF - Transportadora Porto Ferreira",
     descricao:
-      "Desenvolvedor Web frontend e backend, utilizando PHP/Laravel, Html, PostgreSQL , Css, Tailwind, Javascript, React.js, Next.js, React Native",
-      periodo:{
-        inicio: "Dez. 2022",
-        fim: "Até o momento"
-      }
+    "Desenvolvedor Web frontend e backend, utilizando PHP/Laravel, Html, PostgreSQL , Css, Tailwind, Javascript, React.js, Next.js, React Native",
+    periodo:{
+      inicio: "Dez. 2022",
+      fim: "Até o momento"
+    }
   },
   {
     titulo: "Conhecimentos",
     descricao:
-      "Linux, Git, Teste unitários, Laravel, React, React Native, Flutter (desenvolvimento móvel), Figma (design e prototipação), Photoshop, Illustrator, InDesign.",
+    "Linux, Git, Teste unitários, Laravel, React, React Native, Flutter (desenvolvimento móvel), Figma (design e prototipação), Photoshop, Illustrator, InDesign.",
   },
 ];
