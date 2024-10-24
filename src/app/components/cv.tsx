@@ -1,9 +1,18 @@
-import { curriculo } from "@/lib/constants";
+import { conhecimentos, curriculo } from "@/lib/constants";
 import { ICurriculoItem } from "@/interfaces/curriculo";
+import CurriculoItem from "@/app/components/CurriculoItem";
 
 const Cv = () => {
   return (
     <>
+      <section className="flex-col md:flex-row flex items-center md:justify-between">
+        <h1 className="text-3xl md:text-3xl font-bold tracking-tighter leading-tight md:pr-8">
+          Conhecimentos:
+        </h1>
+      </section>
+      {conhecimentos.map((item: ICurriculoItem, index) => (
+          <CurriculoItem key={index} item={item} />
+        ))}
       <section className="flex-col md:flex-row flex items-center md:justify-between">
         <h1 className="text-3xl md:text-3xl font-bold tracking-tighter leading-tight md:pr-8">
           Experiência:
@@ -13,30 +22,7 @@ const Cv = () => {
         style={{ display: "flex", flexDirection: "column", marginBottom: 20 }}
       >
         {curriculo.map((item: ICurriculoItem, index) => (
-          <section
-            key={index}
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              marginBottom: 40,
-              borderRadius: 10,
-              padding: 10,
-              // boxShadow: "10px 10px 40px 0px rgba(189,189,189,1)",
-              backgroundColor: "transparent",
-            }}
-          >
-            {item.periodo !== undefined && <Periodo item={item} />}
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-              }}
-            >
-              <h1 className="text-3xl">{item.titulo}</h1>
-              <div dangerouslySetInnerHTML={{ __html: item.descricao }} />
-            </div>
-          </section>
+          <CurriculoItem key={index} item={item} />
         ))}
       </div>
     </>
@@ -44,33 +30,3 @@ const Cv = () => {
 };
 
 export default Cv;
-
-export interface IPeriodoProps {
-  item: ICurriculoItem
-}
-const Periodo = (props:IPeriodoProps) => {
-  return (
-    <div
-      style={{
-        borderWidth: 4,
-        borderRadius: 10,
-        padding: 10,
-        marginTop: 0,
-        marginRight: 25,
-        marginLeft: 0,
-        marginBottom: 0,
-        minWidth: 150,
-        justifyContent: "center",
-        alignContent: "center",
-        background: "#d3d3d3",
-        minHeight: 100,
-        color: "#484848",
-      }}
-    >
-        <>
-          <h5>de: {props.item?.periodo?.inicio}</h5>
-          <h5>até: {props.item?.periodo?.fim}</h5>
-        </>
-    </div>
-  );
-}
