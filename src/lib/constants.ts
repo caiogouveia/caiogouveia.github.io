@@ -1,4 +1,4 @@
-import { ICurriculoItem } from "@/src/interfaces/curriculo";
+import { ICurriculoItem } from "@/interfaces/curriculo";
 
 export const SITE_TITLE = "";
 export const SITE_DESCRIPTION = "";
