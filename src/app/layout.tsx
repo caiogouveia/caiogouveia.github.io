@@ -78,7 +78,7 @@ const Line = ({ position }: { position: number }) => {
   return (
     <div
       style={{
-        borderLeftWidth: 1,
+        borderLeftWidth: 2,
         borderColor: "red",
         position: "absolute",
         height: "100%",
