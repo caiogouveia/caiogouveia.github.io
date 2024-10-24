@@ -1,4 +1,6 @@
-import { curriculo, ICurriculoItem } from "@/lib/constants";
+import { curriculo } from "@/lib/constants";
+import { ICurriculoItem } from "@/interfaces/curriculo";
+
 const Cv = () => {
   return (
     <>

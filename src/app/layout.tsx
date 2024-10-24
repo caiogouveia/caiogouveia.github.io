@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Caio Gouveia",
-  description: "Caio Gouveia cv",
+  description: "Caio Gouveia Curriculo",
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
   },
