@@ -8,8 +8,14 @@ import Header from "@/app/components/header";
 import { PostBody } from "@/app/components/post-body";
 import { PostHeader } from "@/app/components/post-header";
 
-export default async function Post({ params }: Params) {
-  const post = getPostBySlug(params.slug);
+// export default async function Post({ params }: Params) {
+export default async function Post({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const {slug} = await params;
+  const post = getPostBySlug(slug);
 
   if (!post) {
     return notFound();
@@ -41,8 +47,13 @@ type Params = {
   };
 };
 
-export function generateMetadata({ params }: Params): Metadata {
-  const post = getPostBySlug(params.slug);
+export async function generateMetadata({ 
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const {slug } = await params;
+  const post = getPostBySlug(slug);
 
   if (!post) {
     return notFound();
