@@ -3,7 +3,6 @@ import { HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 
-import "./globals.css";
 
 const JetBrainMono = JetBrains_Mono({ subsets: ["latin"] });
 
@@ -55,8 +54,14 @@ export default function RootLayout({
       </head>
       <body
         className={JetBrainMono.className}
+        style={{
+          height: "100%",
+          overflowY: "scroll"
+        }}
       >
+        <div className="main">
           {children}
+        </div>
       </body>
     </html>
   );
