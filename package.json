@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@microsoft/clarity": "^1.0.0",
     "classnames": "^2.5.1",
     "date-fns": "^4.1.0",
     "gray-matter": "^4.0.3",
