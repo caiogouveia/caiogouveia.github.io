@@ -55,7 +55,6 @@ export default function RootLayout({
       </head>
       <body className={JetBrainMono.className}>
         {children}
-        {children}
         <Script id="clarity-script" strategy="afterInteractive">
           {`
             function(c,l,a,r,i,t,y){
