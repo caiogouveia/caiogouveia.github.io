@@ -1,27 +1,13 @@
 import React from 'react';
 import { Intro } from "@/app/components/intro";
-import Cv from "@/app/components/cv";
-import { MoreStories } from "@/app/components/more-stories";
-import { getAllPosts } from "@/lib/api";
+// import Cv from "@/app/components/cv";
+// import { MoreStories } from "@/app/components/more-stories";
+// import { getAllPosts } from "@/lib/api";
 
 export default function Index() {
   // const morePosts = getAllPosts();
   return (
-    <main
-      style={{
-
-
-
-
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        width: "100%",
-        height: "100%",
-        padding: "0 20px",
-      }}
-    >
+    <main className='flex my-10 md:my-0 mx-5 md:justify-self-center md:flex-col md:w-1/2 md:h-dvh md:justify-center md:align-center'>
       <CartaApresentacao />
       {/* <Intro /> */}
       {/* <Cv /> */}
@@ -32,13 +18,17 @@ export default function Index() {
 
 function CartaApresentacao() {
   return (
-    <div className="fuck-tailwind">
-      <Intro />
+    <div className="leading-6">
+      <div className='mb-10'>
+        <Intro />
+      </div>
       <div>
         Sou desenvolvedor com mais de 14 anos de experiência, <br/>
-        atualmente na TPF - <ExLink link={'https://tpf.com.br'}>Transportadora Porto Ferreira</ExLink>. Tenho expertise em, <strong>MVC</strong> com <strong>Laravel</strong> e <strong>Ruby on Rails</strong>, no front
-        <strong>React.js/React Native</strong>, jQuery(in old days), e um pouco de Flutter,
-        design de interface do usuário (Figma) e também um pouco de nuvem AWS e Azure.
+        atualmente na TPF - <ExLink link={'https://tpf.com.br'}>Transportadora Porto Ferreira</ExLink>. <br/>
+        <br/>
+        Tenho expertise em, <strong>MVC</strong> com <strong>Laravel</strong> e <strong>Ruby on Rails</strong>,
+        no front <strong>React.js/React Native</strong>, jQuery(back in the day), e um pouco de Flutter,
+        design de interface do usuário (Figma) e também um pouco de nuvem AWS, Azure e Heroku.
         <br />
         <br />
         Já atuei como freelancer e em empresas como <ExLink link={'https://www.quattromani.com.br'}>Quattromani Propaganda</ExLink>,
@@ -56,17 +46,15 @@ function CartaApresentacao() {
         Entre em contato!
         <br />
         <br />
-        Atenciosamente,Caio Gouveia
-        <div style={{ display: "flex", paddingTop: "10px" }}>
+        Atenciosamente, Caio Gouveia.
+        <div className="flex flex-col md:flex-row my-20 md:my-10 p-5 md:p-0 gap-2 md:gap-0">
           <ExLink link="https://www.linkedin.com/in/caiogouveia/">
             LinkedIn
           </ExLink>
-          -
           <ExLink local link="/curriculo">
             Currículo
           </ExLink>
-          -
-            Portifólio ?? (em breve)
+          Portifólio ?? (em breve)
         </div>
       </div>
     </div>
@@ -82,22 +70,8 @@ export interface ExLinkProps
 function ExLink(props: ExLinkProps){
   const target = props.local ? "": "_blank"
   return(
-    <span style={{
-      // border: "1px solid red",
-      display: "inline-flex",
-      flexDirection: "row",
-      width:"auto",
-      height: "23px",
-      paddingRight: "4px",
-      paddingLeft: "4px",
-    }}>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center"
-        }}
-        >
+    <span className="inline-flex flex-col w-auto h-[23px] px-2 md:px-0">
+      <span className="flex justify-center content-center">
           <a href={props.link} target={target}>
             {props.children}
           </a>
@@ -115,7 +89,7 @@ function ExLink(props: ExLinkProps){
           </svg>
           </a>
           )}
-        </div>
+        </span>
       </span>
   );
 }

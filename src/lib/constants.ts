@@ -14,7 +14,7 @@ export const HOME_OG_IMAGE_URL =
   ];
 
 export const curriculo: ICurriculoItem[] = [
- 
+
   {
     titulo: "Meio do Meio Propaganda",
     descricao: "Desenvolvedor Web, utilizando Flash, PHP, MySQL.",
@@ -67,5 +67,6 @@ export const curriculo: ICurriculoItem[] = [
       fim: "Até o momento"
     }
   },
-
 ];
+
+export const curriculoSort = curriculo.reverse();

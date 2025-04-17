@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+import React from "react";
 import { notFound } from "next/navigation";
 import { getAllPosts, getPostBySlug } from "@/lib/api";
 import { SITE_TITLE } from "@/lib/constants";
@@ -41,13 +41,7 @@ export default async function Post({
   );
 }
 
-type Params = {
-  params: {
-    slug: string;
-  };
-};
-
-export async function generateMetadata({ 
+export async function generateMetadata({
   params,
 }: {
   params: Promise<{ slug: string }>;

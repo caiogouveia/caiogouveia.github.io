@@ -1,3 +1,4 @@
+import React from "react";
 import Container from "@/app/components/container";
 
 export function Footer() {

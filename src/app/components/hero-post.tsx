@@ -1,3 +1,4 @@
+import React from "react";
 import Avatar from "@/app/components/avatar";
 import CoverImage from "@/app/components/cover-image";
 import { type Author } from "@/interfaces/author";

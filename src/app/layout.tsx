@@ -1,4 +1,4 @@
-import Footer from "@/app/components/footer";
+import React from "react";
 import { HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br">
+    <html lang="pt-br" className={JetBrainMono.className}>
       <head>
         <link
           rel="apple-touch-icon"
@@ -53,7 +53,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
-      <body className={JetBrainMono.className}>
+      <body>
         {children}
         <Script id="clarity-script" strategy="afterInteractive">
           {`

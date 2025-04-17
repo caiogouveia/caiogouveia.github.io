@@ -1,25 +1,20 @@
+import React from "react";
+
 export function Intro() {
   return (
-      <section style={{paddingBottom: "20px"}}>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            alignContent: "center",
-          }}
-        >
-          <Gravatar />
-          <div style={{display: "flex", flexDirection: "column"}}>
-          <h3>
+    <div className="pb-1">
+      <div className="flex flex-row content-center items-center">
+        <Gravatar />
+        <div className="flex flex-col">
+          <h3 className="text-2xl md:text-3xl">
             Oi, meu nome é
           </h3>
-          <h1 style={{marginTop: "20px", marginBottom: "10px"}}>
+          <h1 className="font-bold text-3xl md:text-4xl">
             Caio Gouveia
           </h1>
-          </div>
         </div>
-      </section>
+      </div>
+    </div>
   );
 }
 

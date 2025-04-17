@@ -1,28 +1,13 @@
+import React from "react";
 import type { ICurriculoItem } from "@/interfaces/curriculo";
 import Periodo from "./Periodo";
 
 const CurriculoItem = ({ item }: { item: ICurriculoItem }) => {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        marginBottom: 40,
-        borderRadius: 10,
-        padding: 10,
-        boxShadow: "10px 10px 40px 0px rgba(189,189,189,1)",
-        backgroundColor: "transparent",
-      }}
-    >
+    <div className="flex flex-col md:flex-row mb-10 p-5 rounded-xl shadow-xl border-2 border-gray-900">
       {item.periodo !== undefined && <Periodo item={item} />}
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-        }}
-      >
-        <h1 className="text-3xl">{item.titulo}</h1>
+      <div className="flex flex-col justify-center">
+        <h1 className="text-2xl font-bold text-bold">{item.titulo}</h1>
         <div dangerouslySetInnerHTML={{ __html: item.descricao }} />
       </div>
     </div>

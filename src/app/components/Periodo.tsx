@@ -1,4 +1,4 @@
-
+import React from "react";
 import { ICurriculoItem } from "@/interfaces/curriculo";
 
 export interface IPeriodoProps {
@@ -7,27 +7,9 @@ export interface IPeriodoProps {
 
 const Periodo = (props:IPeriodoProps) => {
   return (
-    <div
-      style={{
-        borderWidth: 4,
-        borderRadius: 10,
-        padding: 10,
-        marginTop: 0,
-        marginRight: 25,
-        marginLeft: 0,
-        marginBottom: 0,
-        minWidth: 150,
-        justifyContent: "center",
-        alignContent: "center",
-        background: "#d3d3d3",
-        minHeight: 100,
-        color: "#484848",
-      }}
-    >
-        <>
+    <div className="text-center flex flex-col border-4 rounded-lg p-1 m-5 min-w-[150px] min-h-5 content-center justify-center">
           <h5>de: {props.item?.periodo?.inicio}</h5>
           <h5>até: {props.item?.periodo?.fim}</h5>
-        </>
     </div>
   );
 }
