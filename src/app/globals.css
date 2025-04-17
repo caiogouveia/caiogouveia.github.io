@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@layer theme {
+
+    :root,
+    :host {
+        --text-red-500: oklch(0.637 0.237 25.331);
+    }
+}
 /* html {
     padding: 0;
     margin: 0;
