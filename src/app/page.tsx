@@ -47,7 +47,7 @@ function CartaApresentacao() {
         <br />
         <br />
         Atenciosamente, Caio Gouveia.
-        <div className="flex flex-col md:flex-row my-20 md:my-10 p-5 md:p-0 gap-2 md:gap-0">
+        <div className="flex flex-col md:flex-row my-20 md:my-10 p-5 md:p-0 gap-2 md:gap-5">
           <ExLink link="https://www.linkedin.com/in/caiogouveia/">
             LinkedIn
           </ExLink>
