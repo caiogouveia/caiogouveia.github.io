@@ -23,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className={JetBrainMono.className}>
       <head>
+        <meta name="google-site-verification" content="r9_QRx6JtJZIklnqcGvvn2-LSoraP5rIwuvA2y1TCxg" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
