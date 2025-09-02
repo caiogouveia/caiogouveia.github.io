@@ -1,5 +1,5 @@
 
-import { Container } from "@/app/components/container";
+import Container from "@/app/components/container";
 import React from "react";
 
 export default function PrivacyPolicy() {
