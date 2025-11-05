@@ -5,13 +5,24 @@ export const SITE_DESCRIPTION = "";
 export const HOME_OG_IMAGE_URL =
   "https://og-image.vercel.app/Next.js%20Blog%20Starter%20Example.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg";
 
-  export const conhecimentos: ICurriculoItem[] = [
-    {
-      titulo: "",
-      descricao:
-      "Linux, Git, Teste unitários, Laravel, React, React Native, Flutter (desenvolvimento móvel), Figma (design e prototipação), Photoshop, Illustrator, InDesign.",
-    },
-  ];
+export const formacao:ICurriculoItem[] = [
+  {
+    titulo: "Escola Superior de Tecnologia e Educação - Asser",
+    descricao: "Sistemas de Informação"
+  },
+  {
+    titulo:"Fatece - Faculdade de Tecnologia, Ciências e Educação",
+    descricao: "Pós-graduação Lato Sensu, Marketing Digital"
+  }
+];
+
+export const conhecimentos: ICurriculoItem[] = [
+  {
+    titulo: "",
+    descricao:
+    "Linux, Git, Teste unitários, Sentry, Laravel, React, React Native, Flutter (desenvolvimento móvel), Figma (design e prototipação), Photoshop, Illustrator, InDesign.",
+  },
+];
 
 export const curriculo: ICurriculoItem[] = [
 
