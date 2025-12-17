@@ -1,3 +1,4 @@
 # Personal stuff
-personal blog ?
-cv ?
+Personal Blog ?
+CV ?
+Work in Progress
