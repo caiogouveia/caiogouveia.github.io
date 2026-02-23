@@ -21,6 +21,7 @@
     "tailwindcss": "^4.1.4"
   },
   "devDependencies": {
+    "serve": "^14.2.5",
     "@eslint/js": "^9.24.0",
     "@types/estree": "^1.0.6",
     "@types/json-schema": "^7.0.15",
