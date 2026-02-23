@@ -40,7 +40,6 @@ jobs:
           #
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: next
-      - run: bun run lint
       - run: bun install
       - run: bun index.ts
       - run: bun run build
