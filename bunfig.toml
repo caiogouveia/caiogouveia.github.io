@@ -5,3 +5,7 @@ minimumReleaseAge = 86400
 
 # Usa o linker isolado para evitar dependências fantasma e aumentar a segurança.
 linker = "isolated"
+
+[install.ci]
+# Fallback para --frozen-lockfile quando CI=true (definido automaticamente pelo GitHub Actions).
+frozenLockfile = true
