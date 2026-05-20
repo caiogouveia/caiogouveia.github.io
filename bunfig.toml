@@ -1,0 +1,7 @@
+[install]
+# Proteção contra "zero-day" supply chain attacks: 
+# Ignora pacotes publicados há menos de 24 horas.
+minimumReleaseAge = 86400
+
+# Usa o linker isolado para evitar dependências fantasma e aumentar a segurança.
+linker = "isolated"
